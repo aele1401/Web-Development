@@ -1,0 +1,140 @@
+HTTP Requests & Responses
+
+1. What type of architecture does the HTTP request and response process occur in?
+   Client-server architecture. Requests are made from the client to the server then are returned back to the client.
+
+2. What are the different parts of an HTTP request?
+   Request line, header, and body.
+
+3. Which part of an HTTP request is optional? 
+   The request body.
+
+4. What are the three parts of an HTTP response?
+   The status line, response header and body.
+
+5. Which number class of status codes represents errors?
+   400 & 500.
+
+6. What are the two most common request methods that a security professional will encounter?
+   Post and get methods.
+
+7. Which type of HTTP request method is used for sending data?
+   Post request method.
+
+8. Which part of an HTTP request contains the data being sent to the server?
+   The request body.
+
+9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+   Response body. 
+
+
+Using CURL
+
+10. What are the advantages of using curl over the browser?
+    Curl can be repeated, automated, & edited while being used.
+
+11. Which curl option is used to change the request method?
+    Curl -x.
+
+12. Which curl option is used to set request headers?
+    Curl -h.
+
+13. Which curl option is used to view the response header?
+    Curl -i.
+
+14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+    Get or options.
+
+
+SESSIONS & COOKIES
+
+15. Which response header sends a cookie to the client?
+    HTTP/1.1 200 OK
+    Content-type: text/html
+    Set-Cookie: cart=Bob
+
+    Set-Cookie sends cookie to client.
+
+16. Which request header will continue the client's session?
+    GET /cart HTTP/1.1
+    Host: www.example.org
+    Cookie: cart=Bob
+
+    Cookie will save/continue the client's session.
+
+
+EXAMPLE HTTP REQUESTS & RESPONSES
+
+17. What is the request method?
+    Post.
+
+18. Which header expresses the client's preference for an encrypted response?
+    Upgrade-insecure-requests 1.
+
+19. Does the request have a user session associated with it?
+    No.
+
+20. What kind of data is being sent from this request body?
+    Login.
+
+21. What is the response status code?
+    200.
+
+22. What web server is handling this HTTP response?
+    Apache.
+
+23. Does this response have a user session associated to it?
+    Yes, cookie sessionid=5.
+
+24. What kind of content is likely to be in the [page content] response body?
+    Text/web code.
+
+25. If your class covered security headers, what security request headers have been included?
+    Strict transport security, or XSS protection.
+
+
+MONOLITHS & MICROSERVICES
+
+26. What are the individual components of microservices called?
+    Services.
+
+27. What is a service that writes to a database and communicates to other services?
+    An API service.
+
+28. What type of underlying technology allows for microservices to become scalable and have redundancy?
+    Containers.
+
+
+DEPLOYING & TESTING A CONTAINER SET
+
+29. What tool can be used to deploy multiple containers at once?
+    Docker.
+
+30. What kind of file format is required for us to deploy a container set?
+    YAML, .yml.
+
+
+DATABASES
+
+31. Which type of SQL query would we use to see all of the information within a table called customers?
+    Select & from customers.
+
+32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
+    Insert.
+
+33. Why would we never run DELETE FROM <table-name>; by itself?
+    Deletes all tables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
